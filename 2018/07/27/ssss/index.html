@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://wuhuaxing2017.github.io">
-  <title>Tag: python | 吴华兴的个人博客</title>
+  <title>安装依赖 | 吴华兴的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="甜西瓜不太甜">
-<meta name="keywords" content="甜西瓜不太甜">
-<meta property="og:type" content="website">
-<meta property="og:title" content="吴华兴的个人博客">
-<meta property="og:url" content="https://wuhuaxing2017.github.io/tags/python/index.html">
+  <meta name="description" content="学习">
+<meta name="keywords" content="python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="安装依赖">
+<meta property="og:url" content="https://wuhuaxing2017.github.io/2018/07/27/ssss/index.html">
 <meta property="og:site_name" content="吴华兴的个人博客">
-<meta property="og:description" content="甜西瓜不太甜">
+<meta property="og:description" content="学习">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-07-27T14:58:24.546Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="吴华兴的个人博客">
-<meta name="twitter:description" content="甜西瓜不太甜">
+<meta name="twitter:title" content="安装依赖">
+<meta name="twitter:description" content="学习">
   
     <link rel="alternative" href="/atom.xml" title="吴华兴的个人博客" type="application/atom+xml">
   
@@ -154,36 +155,117 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-ssss" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/27/ssss/" class="archive-article-date">
-  	<time datetime="2018-07-26T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-27</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/27/ssss/">安装依赖</a>
+    <h1 class="article-title" itemprop="name">
+      安装依赖
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2018/07/27/ssss/" class="archive-article-date">
+  	<time datetime="2018-07-26T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-27</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="1、安装依赖"><a href="#1、安装依赖" class="headerlink" title="1、安装依赖"></a>1、安装依赖</h3><p> 生成requirements.txt文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install &gt; requirements.txt</span><br></pre></td></tr></table></figure>
+<p>安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure>
+<h3 id="2、虚拟环境和管理"><a href="#2、虚拟环境和管理" class="headerlink" title="2、虚拟环境和管理"></a>2、虚拟环境和管理</h3><table>
+<thead>
+<tr>
+<th></th>
+<th>windows</th>
+<th>linux</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1、安装virtualenv</td>
+<td>pip install virtualenv</td>
+<td>同理</td>
+</tr>
+<tr>
+<td>2. 新建虚拟环境</td>
+<td>virtualenv  env_test</td>
+<td>同理</td>
+</tr>
+<tr>
+<td>3. 进入虚拟环境</td>
+<td>cd env_test\Scripts  activate.bat</td>
+<td>同理</td>
+</tr>
+<tr>
+<td>5. 退出virtualenv</td>
+<td>deactivate.bat</td>
+<td>deactivate</td>
+</tr>
+<tr>
+<td>6、安装virtualenvwrapper</td>
+<td>pip install virtualenvwrapper-win</td>
+<td>pip install virtualenvwrapper</td>
+</tr>
+<tr>
+<td>7、设置WORK_HOME环境变量</td>
+<td>自己理解</td>
+<td>同理</td>
+</tr>
+<tr>
+<td>8、新建虚拟环境</td>
+<td>mkvirtualenv env_test2</td>
+<td>同理</td>
+</tr>
+<tr>
+<td>9、查看安装的所有虚拟环境( 只能查看mkvirtualenv创建的虚拟环境)</td>
+<td>workon</td>
+<td>同理</td>
+</tr>
+<tr>
+<td>10、退出虚拟环境</td>
+<td>deactivate</td>
+<td>同理</td>
+</tr>
+</tbody>
+</table>
+<h1 id="注意！"><a href="#注意！" class="headerlink" title="注意！"></a>注意！</h1><p>在设置环境变量WORKON_HOME后</p>
+<p>用<code>mkvirtualenv</code>生成新的虚拟环境路径和设置不一样时</p>
+<h3 id="请重启！！！"><a href="#请重启！！！" class="headerlink" title="请重启！！！"></a>请重启！！！</h3>
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果,吴<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -195,7 +277,7 @@
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -208,70 +290,113 @@
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://wuhuaxing2017.github.io/2018/07/27/ssss/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/27/Git详细教程/" class="archive-article-date">
-  	<time datetime="2018-07-26T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-27</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2018/07/27/新的文章/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          新的文章
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/07/27/Git详细教程/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">git详细笔记</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/27/Git详细教程/">git详细笔记</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/工具使用//" class="article-tag-list-link color5">工具使用</a>
-        		</li>
-      		
-		</ul>
-	</div>
+        
+        
+    </div>
+</aside>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -294,9 +419,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
