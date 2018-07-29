@@ -6,19 +6,26 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://wuhuaxing2017.github.io">
-  <title>Archives: 2018 | 吴华兴的个人博客</title>
+  <title>ubuntu:systemback | 吴华兴的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="甜西瓜不太甜">
-<meta name="keywords" content="甜西瓜不太甜">
-<meta property="og:type" content="website">
-<meta property="og:title" content="吴华兴的个人博客">
-<meta property="og:url" content="https://wuhuaxing2017.github.io/archives/2018/index.html">
+  <meta name="description" content="使用systemback制作Ubuntu自定义系统镜像和系统备份">
+<meta name="keywords" content="linux,ubuntu">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ubuntu:systemback">
+<meta property="og:url" content="https://wuhuaxing2017.github.io/2018/07/29/ubuntu-systemback/index.html">
 <meta property="og:site_name" content="吴华兴的个人博客">
-<meta property="og:description" content="甜西瓜不太甜">
+<meta property="og:description" content="使用systemback制作Ubuntu自定义系统镜像和系统备份">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://community.bwbot.org/uploads/files/1488520080916-screenshot-from-2017-03-03-13-47-36.png">
+<meta property="og:image" content="http://community.bwbot.org/uploads/files/1488520135605-screenshot-from-2017-03-03-13-48-49.png">
+<meta property="og:image" content="http://community.bwbot.org/uploads/files/1488520374613-screenshot-from-2017-03-03-13-52-47.png">
+<meta property="og:image" content="http://community.bwbot.org/uploads/files/1488520634892-screenshot-from-2017-03-03-13-56-48.png">
+<meta property="og:image" content="http://community.bwbot.org/uploads/files/1488520901416-screenshot-from-2017-03-03-14-01-33.png">
+<meta property="og:updated_time" content="2018-07-29T12:20:42.991Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="吴华兴的个人博客">
-<meta name="twitter:description" content="甜西瓜不太甜">
+<meta name="twitter:title" content="ubuntu:systemback">
+<meta name="twitter:description" content="使用systemback制作Ubuntu自定义系统镜像和系统备份">
+<meta name="twitter:image" content="http://community.bwbot.org/uploads/files/1488520080916-screenshot-from-2017-03-03-13-47-36.png">
   
     <link rel="alternative" href="/atom.xml" title="吴华兴的个人博客" type="application/atom+xml">
   
@@ -154,36 +161,94 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-ubuntu-systemback" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/29/ubuntu-systemback/" class="archive-article-date">
-  	<time datetime="2018-07-29T12:16:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-29</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/29/ubuntu-systemback/">ubuntu:systemback</a>
+    <h1 class="article-title" itemprop="name">
+      ubuntu:systemback
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2018/07/29/ubuntu-systemback/" class="archive-article-date">
+  	<time datetime="2018-07-29T12:16:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-29</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="使用systemback制作Ubuntu自定义系统镜像和系统备份"><a href="#使用systemback制作Ubuntu自定义系统镜像和系统备份" class="headerlink" title="使用systemback制作Ubuntu自定义系统镜像和系统备份"></a>使用systemback制作Ubuntu自定义系统镜像和系统备份</h1><a id="more"></a>
+<p>Systemback是一个Ubuntu系统中用于发布自定义系统镜像和系统备份的软件。有时候我们对自己的Ubuntu做了很多设置，比如各种软件包，各种自定义的配置。我们想要在另一台电脑上也安装一个和我们一模一样的系统，这个时候就会用到这种方法了。这个方法不仅可以用于发布系统，也可以用来作为系统备份使用。</p>
+<p>下面就具体介绍一下这个软件的安装和使用方法</p>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo add-apt-repository ppa:nemh/systemback</span><br><span class="line">sudo apt-get update &amp;&amp; sudo apt-get install systemback unionfs-fuse</span><br></pre></td></tr></table></figure>
+<h4 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h4><p>安装完成后在Dash菜单中就能找到这个软件了<br><a href="http://community.bwbot.org/uploads/files/1488520080916-screenshot-from-2017-03-03-13-47-36.png" target="_blank" rel="noopener"><img src="http://community.bwbot.org/uploads/files/1488520080916-screenshot-from-2017-03-03-13-47-36.png" alt="0_1488520081214_Screenshot from 2017-03-03 13-47-36.png"></a></p>
+<p>输入管理员密码，打开后界面如下图所示<br><a href="http://community.bwbot.org/uploads/files/1488520135605-screenshot-from-2017-03-03-13-48-49.png" target="_blank" rel="noopener"><img src="http://community.bwbot.org/uploads/files/1488520135605-screenshot-from-2017-03-03-13-48-49.png" alt="0_1488520135916_Screenshot from 2017-03-03 13-48-49.png"></a></p>
+<p>如果我们需要创建系统备份，点击Create new 就可以了。下面介绍一下自定义系统的iso文件如何制作。</p>
+<ol>
+<li>点击右侧的Live system create按钮，出现界面如下图所示<br><a href="http://community.bwbot.org/uploads/files/1488520374613-screenshot-from-2017-03-03-13-52-47.png" target="_blank" rel="noopener"><img src="http://community.bwbot.org/uploads/files/1488520374613-screenshot-from-2017-03-03-13-52-47.png" alt="0_1488520374959_Screenshot from 2017-03-03 13-52-47.png"></a></li>
+<li>勾选左侧的include the user data files，这样自己主文件夹内的文件都会被包含在系统镜像中。很多相关的程序的配置文件都是保存在主文件夹内的。Working Directory是设置工作目录，程序运行时产生的临时文件都会被保存在这里。所以一定要保证这里有足够的存储空间。</li>
+<li>点击Create New按钮就开始创建了，等待创建完成。完成后界面如下图所示<br><a href="http://community.bwbot.org/uploads/files/1488520634892-screenshot-from-2017-03-03-13-56-48.png" target="_blank" rel="noopener"><img src="http://community.bwbot.org/uploads/files/1488520634892-screenshot-from-2017-03-03-13-56-48.png" alt="0_1488520634884_Screenshot from 2017-03-03 13-56-48.png"></a><br>右侧的列表中就是已经创建的备份。我已经创建了两个相关的备份，所以有两个在右侧显示。此时文件没有转换成iso格式，选中你要转换的备份，点击convert to ISO 就可以开始转换了。转换完成后，在你的工作目录下就能找到生成的iso文件。<br><a href="http://community.bwbot.org/uploads/files/1488520901416-screenshot-from-2017-03-03-14-01-33.png" target="_blank" rel="noopener"><img src="http://community.bwbot.org/uploads/files/1488520901416-screenshot-from-2017-03-03-14-01-33.png" alt="0_1488520901942_Screenshot from 2017-03-03 14-01-33.png"></a></li>
+</ol>
+<p>这个文件就可以用来安装系统了。同时还可以作为live系统来使用。</p>
+<p>在备份过程中可能提示</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">The restore point creation is aborted!</span><br><span class="line">There has been critical changes <span class="keyword">in</span> the file<span class="built_in"> system </span>during this operation</span><br></pre></td></tr></table></figure>
+<p>这并不一定是由于系统发生了严重的更改，只要是在复制文件的过程中出现错误都会出现这个信息。<br>详细的错误信息可以通过</p>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">systemback-sustart</span></span><br></pre></td></tr></table></figure>
+<p>这个指令去调试，看看具体哪一个文件复制出了问题。极有可能的是权限问题。<br>也可以通过这个指令去调试</p>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">DBGLEV</span>=<span class="number">3</span> systemback-sustart</span><br></pre></td></tr></table></figure>
+<p>当错误出现后会在/tmp文件夹下创建一个systemback的错误信息文件。可以方便的通过这个文件去找到错误的原因。</p>
+<h1 id="解决systemback-无法生成超过4G的iso的问题"><a href="#解决systemback-无法生成超过4G的iso的问题" class="headerlink" title="解决systemback 无法生成超过4G的iso的问题"></a>解决systemback 无法生成超过4G的iso的问题</h1><p>systemback是一个很好的备份还原软件。用它还可以生成自己的linux系统镜像文件。但是在使用时会发现当生成的sblive文件大于4G的时候是没有办法生成iso文件的。这是由于iso文件自身的限制，iso9600对于文件有限制，单个文件不能超过2G，总的iso文件不能超过4G。</p>
+<p>但是我们经常见到的系统安装iso文件很多都是超过4G的。这是怎么回事呢。经过我的苦苦搜索终于找到了一点线索。对于大于4G的可以采用udf文件系统。下面就是具体的解决方法了。</p>
+<ol>
+<li>解压 .sblive 文件:</li>
+</ol>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> sblive</span><br><span class="line">tar -xf /<span class="built_in">home</span>/systemback_live_2016<span class="number">-04</span><span class="number">-27.</span>sblive -C sblive</span><br></pre></td></tr></table></figure>
+<ol>
+<li>重命名 syslinux 至 isolinux:</li>
+</ol>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mv sblive/syslinux/syslinux<span class="selector-class">.cfg</span> sblive/syslinux/isolinux.cfg</span><br><span class="line">mv sblive/syslinux sblive/isolinux</span><br></pre></td></tr></table></figure>
+<ol>
+<li>安装 cdtools</li>
+</ol>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">aria2c -s <span class="number">10</span> http<span class="variable">s:</span>//nchc.<span class="keyword">dl</span>.sourceforge.net/project/cdrtools/alpha/cdrtools-<span class="number">3.02</span>a07.tar.gz</span><br><span class="line">tar -xzvf cdrtools-<span class="number">3.02</span>a07.tar.gz</span><br><span class="line"><span class="keyword">cd</span> cdrtools-<span class="number">3.02</span></span><br><span class="line"><span class="keyword">make</span></span><br><span class="line">sudo <span class="keyword">make</span> install</span><br></pre></td></tr></table></figure>
+<ol>
+<li>生成 ISO 文件:</li>
+</ol>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/opt/schily/bin/mkisofs -iso-level <span class="number">3</span> -r -V sblive -cache-inodes -J -l -<span class="selector-tag">b</span> isolinux/isolinux<span class="selector-class">.bin</span> -no-emul-boot -boot-load-size <span class="number">4</span> -boot-info-<span class="selector-tag">table</span> -c isolinux/boot<span class="selector-class">.cat</span> -o sblive<span class="selector-class">.iso</span> sblive</span><br></pre></td></tr></table></figure>
+<p>这样就可以了，估计当文件大于4G的时候程序会自动采用udf文件系统，所以可以成功创建iso文件。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果,吴<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -199,148 +264,106 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://wuhuaxing2017.github.io/2018/07/29/ubuntu-systemback/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/27/新的文章/" class="archive-article-date">
-  	<time datetime="2018-07-27T14:20:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-27</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/07/27/新的文章/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">新的文章</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/27/新的文章/">新的文章</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/27/ssss/" class="archive-article-date">
-  	<time datetime="2018-07-26T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-27</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/27/ssss/">安装依赖</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/工具使用//" class="article-tag-list-link color5">工具使用</a>
-        		</li>
-      		
-		</ul>
-	</div>
+        
+        
+    </div>
+</aside>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/27/Git详细教程/" class="archive-article-date">
-  	<time datetime="2018-07-26T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-27</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/27/Git详细教程/">git详细笔记</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/工具使用//" class="article-tag-list-link color5">工具使用</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -363,8 +386,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

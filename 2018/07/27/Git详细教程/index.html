@@ -515,7 +515,7 @@
 <p>上面的是我把<code>commit</code>命令起了<code>cm</code>这个简单的命令，真的是好记多了！</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global alias.co checkout</span><br><span class="line">$ git config --global alias.sts status</span><br><span class="line">$ git config --global alias.br branch</span><br></pre></td></tr></table></figure>
 <p>在<a href="">撤销修改</a>一节中，我们知道，命令<code>git reset HEAD file</code>可以把暂存区的修改撤销掉（unstage），重新放回工作区。既然是一个unstage操作，就可以配置一个<code>unstage</code>别名：</p>
-<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --<span class="keyword">global</span> <span class="keyword">alias</span>.unstage <span class="string">'reset HEAD'</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git config --global alias.unstage <span class="string">'reset HEAD'</span></span></span><br></pre></td></tr></table></figure>
 <p>下次想要撤销修改时，就可以直接用<code>git unstage tset</code>替换<code>git rest HEAD test</code>了</p>
 <p>配置一个<code>git last</code>，让其显示最后一次提交信息：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global alias.last <span class="string">'log -1'</span></span><br></pre></td></tr></table></figure>
@@ -768,6 +768,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">ubuntu</a>
+              </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">python</a>
